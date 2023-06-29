@@ -48,3 +48,13 @@ class Math{
         return $json;
     }
 }
+
+$omath = new Math();
+$json = '[
+    {"A": 2,"B": 3, "C": "= ((A + B) * B) / A"},
+    {"A": 1, "B": 2, "C": "= A - B"},
+    {"A": 1, "B": 2,"C": "= A * B"},
+    {"A": 1,"B": 2,"C": "= A / B"}
+    ]';
+$pjson = $omath->arithmetic($json);
+print_r($pjson);
