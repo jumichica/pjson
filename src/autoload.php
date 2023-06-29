@@ -1,3 +1,3 @@
 <?php
 # LOAD MATH LIBRARY
-require_once __DIR__.'/math/main.php';
+require_once dirname(__FILE__).'/math/main.php';
