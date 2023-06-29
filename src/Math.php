@@ -10,21 +10,20 @@ namespace Jumichica\Pjson;
 
 class Math{
     /**
-     * @param $json string to transform
+     * @param string $json to transform a original Json with operation in to Json with results of formulas.
      * @return String
      */
-    public function arithmetic($json){
+    public function arithmetic(string $json): string
+    {
         $pjson="";
         // ENCODE JSON STRING
         $json = json_decode($json);
         // PROCESS THE JSON
 
-        foreach ($json as $rkey => $row) {
+        foreach ($json as $row) {
             foreach ($row as $key => $value){
-                $formula = "";
                 $first_character = substr($value, 0, 1);
                 $iresult = 0;
-                $bformula="";
                 if($first_character=='='){
                     $bformula = $value;
                     $formula = str_replace("=", "", $value);
@@ -36,15 +35,14 @@ class Math{
                     $formula = '$iresult = '.$formula.';';
                     // EVAL THE FORMULE
                     eval($formula);
-                    $json[$rkey]->$key = "{'formula': '$bformula', 'value':'$iresult'}";
+                    $row->$key = "{'formula': '$bformula', 'value':'$iresult'}";
                 }
                 else{
                     $iresult = $value;
-                    $json[$rkey]->$key = $iresult;
+                    $row->$key = $iresult;
                 }
             }
         }
-        $json = json_encode($json);
-        return $json;
+        return json_encode($json);
     }
 }
