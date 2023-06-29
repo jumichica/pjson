@@ -5,6 +5,9 @@
  * @copyright Jumichica
  * @license MIT
  */
+
+namespace jumichica\psjon\math;
+
 class Math{
     /**
      * @param $json Json string to transform
@@ -45,15 +48,3 @@ class Math{
         return $json;
     }
 }
-
-/***
-$omath = new Math();
-$json = '[
-            {"A": 1,"B": 2, "C": "= A + B"},
-            {"A": 1, "B": 2, "C": "= A - B"},
-            {"A": 1, "B": 2,"C": "= A * B"},
-            {"A": 1,"B": 2,"C": "= A / B"}
-        ]';
-$pjson = $omath->arithmetic($json);
-print_r($pjson);
-***/
