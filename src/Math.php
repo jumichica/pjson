@@ -10,7 +10,7 @@ namespace Jumichica\Pjson;
 
 class Math{
     /**
-     * @param $json Json string to transform
+     * @param $json string to transform
      * @return String
      */
     public function arithmetic($json){
