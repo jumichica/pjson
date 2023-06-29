@@ -19,7 +19,6 @@ class Math{
         // ENCODE JSON STRING
         $json = json_decode($json);
         // PROCESS THE JSON
-
         foreach ($json as $row) {
             foreach ($row as $key => $value){
                 $first_character = substr($value, 0, 1);
