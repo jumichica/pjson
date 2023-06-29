@@ -7,7 +7,7 @@
     "autoload": {
         "psr-4": {
             "Jumichica\\Pjson\\": "src/",
-            "classmap":["src/", "src/math/main.php"]
+            "classmap":["src/", "src/math/main.php"],
         }
     },
     "authors": [
