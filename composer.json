@@ -3,10 +3,10 @@
     "description": "Methods to transform json files using maths, filters and more.",
     "type": "library",
     "license": "MIT",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "autoload": {
         "psr-4": {
-            "Jumichica\\Pjson\\": ["src/", "src/math/"]
+            "Jumichica\\Pjson\\": "src/"
         }
     },
     "authors": [

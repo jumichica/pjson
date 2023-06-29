@@ -6,7 +6,7 @@
  * @license MIT
  */
 
-namespace jumichica\psjon\math;
+namespace Jumichica\Pjson;
 
 class Math{
     /**

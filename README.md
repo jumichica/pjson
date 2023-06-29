@@ -11,7 +11,7 @@ If you define a atribute with an initial equal (=) the system analyze te content
     <?php
     require_once __DIR__.'/../vendor/autoload.php';
     
-    use jumichica\pjson\math\Math;
+    use Jumichica\Pjson\Math;
     
     $omath = new Math();
     $json = '[
