@@ -1,0 +1,18 @@
+{
+    "name": "jumichica/pjson",
+    "description": "Methods to transform json files using maths, filters and more.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jumichica\\Pjson\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edwin Ariza",
+            "email": "me@edwinariza.com"
+        }
+    ],
+    "require": {}
+}
