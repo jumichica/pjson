@@ -34,7 +34,7 @@ class Math{
                     $formula = '$iresult = '.$formula.';';
                     // EVAL THE FORMULE
                     eval($formula);
-                    $row->$key = "{'formula': '$bformula', 'value':'$iresult'}";
+                    $row->$key = array("formula" => $bformula, "value" => $iresult);
                 }
                 else{
                     $iresult = $value;
