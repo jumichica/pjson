@@ -11,4 +11,5 @@ $json = '[
 {"A": 1,"B": 2,"C": "= A / B"}
 ]';
 $pjson = $omath->arithmetic($json);
-print_r($pjson);
+$pjson = json_decode($pjson);
+print_r($pjson[0]->C->value);
